@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Mincho&display=swap');
+
+/* PC */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    background: radial-gradient(circle, rgb(45, 45, 45), black);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*                           ITEM 1 - CABEÇALHO                        */
+
+#item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 100%; 
+    background-color: white;
+    padding: 50px;
+    font-size: 50px;
+    color: black;
+    box-sizing: border-box;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; 
+}
+
+#item1 p {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.2;
+}
+
+/*                           ITEM 2 -                         */
+
+#item2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 80%;
+    height: 180px;
+    background-color: rgba(209, 209, 209, 0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+    padding: 60px; /*padding do quadrado em si*/
+    position: relative;
+}
+
+#item2 p {
+    max-width: 50%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#item2 img {
+    flex: 0;
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-right: 92px; /*perfeitamente alinhado*/
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+#item2 img:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+/*                           ITEM 3                         */
+
+#item3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 92.5%; /*pra igualar com o de baixo*/
+    height: 100px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    margin-bottom: -15px;
+}
+
+#item3 p {
+    max-width: 80%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*                           ITEM 4                         */
+
+#item4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 83.3%;
+    height: 175px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 75px;
+    color: white;
+    text-align: left;
+}
+
+#item4 img {
+    max-width: 18%;
+    height: auto;
+    display: block;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+}
+
+#item4 img:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+/*                           ITEM 5                         */
+
+#item5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 83.3%;
+    height: 175px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 75px;
+    color: white;
+    text-align: left;
+}
+
+#item5 img {
+    width: 32%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+}
+
+#item5 img:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+/*                           ITEM 6 - CENTRO TEXTO                        */
+
+#item6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 80%;
+    height: 100px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-bottom: -15px;
+    z-index: -1;
+}
+
+/*                           ITEM 7 - CENTRO IMAGEM                        */
+
+#item7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 67.5%;
+    height: 100px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 100px;
+    color: white;
+    text-align: left;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+}
+
+#item7 img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+    position: relative;
+    image-rendering: optimizeQuality;
+    z-index: 1;
+}
+
+#item7 img:hover {
+    transform: scale(1.8);
+    border: 2px solid black;
+    box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+}
+
+.conteudo_E {
+    font-size: 15px;
+    opacity: 0;
+    position: absolute;
+    left: -107px; /*quanto mais proximo de 0, mais pro centro da tela*/
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 250px;
+    transition: opacity 0.5s ease-in-out;
+    text-align: justify;
+    white-space: normal;
+}
+
+.conteudo_D {
+    font-size: 15px;
+    opacity: 0;
+    position: absolute;
+    left: 1032px; /*quanto mais proximo de 0, mais pro centro da tela*/
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 250px;
+    transition: opacity 0.5s ease-in-out;
+    text-align: justify;
+    white-space: normal;
+}
+
+#item7 img:hover + .conteudo_E,
+#item7 img:hover + .conteudo_D {
+    opacity: 1;
+}
+
+/*                           ITEM 8                         */
+
+#item8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 80%;
+    height: 100px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    z-index: -1;
+}
+
+#item8 p {
+    max-width: 75%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*                           ITEM 9                         */
+
+#item9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 100%; 
+    height: 300px;
+    background: linear-gradient(to bottom, red, rgba(0, 0, 0, 0));
+    padding: 50px;
+    font-size: 30px;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; 
+}
+
+/*                           LEFT E RIGHT                         */
+
+.left {
+    align-self: flex-start;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right {
+    align-self: flex-end;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/*                           LUIGI                         */
+
+.luigi {
+    position: relative;
+    display: inline-block;
+}
+
+.luigi span {
+    position: relative;
+    z-index: 1; /* Garante que o texto fique acima da linha */
+}
+
+.luigi::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 12px; /* Ajuste a posição conforme necessário */
+    width: 0;
+    height: 2px; /* Ajuste a altura da linha conforme necessário */
+    background-color: red; /* Usa a cor do texto */
+    transition: width 0.3s ease-in-out;
+}
+
+.luigi:hover::after {
+    width: 100%;
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 768px) {
+    /* Ajusta o container */
+    .container {
+        width: 100%;
+        padding-top: env(safe-area-inset-top, 16px);
+    }
+
+    #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9 {
+        padding: 15px;
+        height: auto;
+        text-align: justify;
+    }
+
+    #item1 {
+        max-width: 100%;
+        height: 150px;
+        padding: 15px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #item1 p {
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        line-height: 0.1;
+    }
+
+    #item2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #item2 p {
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    #item2 img {
+        max-width: 340px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #item3 {
+        text-align: justify;
+        width: 85.5%;
+        height: auto;
+    }
+
+    #item3 p {
+        font-size: 16px;
+    }
+
+    #item4, #item5 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #item4 img {
+        width: 60%;
+        max-width: 250px;
+        height: auto;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    #item5 img {
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        margin: 10px 0;
+        border: 1px solid white;
+    }
+
+    #item6 {
+        font-size: 23px;
+        width: 75%;
+    }
+
+    #item7 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+        width: 75%;
+    }
+
+    #item7 img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .conteudo_E, .conteudo_D {
+        position: relative;
+        left: auto;
+        width: 100%;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #item8 p {
+        text-align: justify;    
+        font-size: 16px;
+    }
+
+    #item9 {
+        font-size: 23px;
+        height: 110px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .luigi {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .luigi span {
+        position: relative;
+        z-index: 2; /* Garante que o texto fique acima da linha */
+    }
+    
+    .luigi::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0; /* Coloca a linha bem embaixo do texto */
+        width: 100%; /* A linha sempre estará visível */
+        height: 2px;
+        background-color: red; /* A cor da linha */
+        z-index: 0; /* A linha vai ficar atrás do texto */
+        margin-bottom: 9px;
+    }
+}
