@@ -353,6 +353,14 @@ body {
         padding-top: env(safe-area-inset-top, 16px);
     }
 
+    #item2 img:hover,
+    #item4 img:hover,
+    #item5 img:hover,
+    #item7 img:hover {
+        transform: none; 
+        box-shadow: none; 
+    }
+
     #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9 {
         padding: 15px;
         height: auto;
