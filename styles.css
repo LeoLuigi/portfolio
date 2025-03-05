@@ -12,6 +12,11 @@ body {
     font-family: Poppins, sans-serif;
     overflow-x: hidden;
     background: radial-gradient(circle, rgb(45, 45, 45), black);
+    /*background: linear-gradient(to right,
+    rgba(25, 25, 25, 1) 2%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(25, 25, 25, 1) 98%)*/
 }
 
 .container {
@@ -62,6 +67,7 @@ body {
     backdrop-filter: blur(4px);
     padding: 60px; /*padding do quadrado em si*/
     position: relative;
+    border-radius: 15px;
 }
 
 #item2 p {
@@ -84,6 +90,7 @@ body {
 #item2 img:hover {
     transform: scale(1.6);
     box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.5);
+    border: 2px solid black;
     z-index: 1;
 }
 
@@ -118,17 +125,18 @@ body {
     flex-direction: row;
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
-    width: 83.3%;
+    width: 78%;
     height: 175px;
     background-color: rgba(209, 209, 209, 0.2);
     backdrop-filter: blur(4px);
     padding: 75px;
     color: white;
     text-align: left;
+    border-radius: 15px;
 }
 
 #item4 img {
-    max-width: 18%;
+    max-width: 15%;
     height: auto;
     display: block;
     transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
@@ -153,6 +161,7 @@ body {
     padding: 75px;
     color: white;
     text-align: left;
+    border-radius: 15px;
 }
 
 #item5 img {
