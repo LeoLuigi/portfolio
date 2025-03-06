@@ -101,21 +101,13 @@ body {
     flex-direction: column;
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
-    width: 92.5%; /*pra igualar com o de baixo*/
-    height: 100px;
-    background-color: rgba(209, 209, 209, 0.2);
-    backdrop-filter: blur(4px);
-    padding: 5px;
-    color: white;
-    text-align: center;
-    z-index: -1;
-    margin-bottom: -15px;
-}
-
-#item3 p {
-    max-width: 80%;
+    width: 100%; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(33, 255, 33, 0.5));
+    padding: 8px;
     font-size: 20px;
-    text-align: justify;
+    color: white;
+    box-sizing: border-box;
+    margin-top: -25px;
 }
 
 /*                           ITEM 4                         */
