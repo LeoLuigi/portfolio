@@ -493,14 +493,15 @@ video {
     }
 
     #item4, #item5 {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         padding: 20px;
+        flex-wrap: wrap;
     }
 
     #item4 img {
-        width: 60%;
+        width: 40%;
         max-width: 250px;
         height: auto;
         margin: 10px 0;
