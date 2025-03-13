@@ -374,6 +374,44 @@ body {
     box-sizing: border-box;
 }
 
+/*                           ITEM 11 - IMAGEM À ESQUERDA SEM BORDAS REDONDINHAS                        */
+
+#item11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    width: 67.5%;
+    height: 300px;
+    background-color: rgba(209, 209, 209, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 100px;
+    color: white;
+    text-align: left;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+}
+
+#item11 img {
+    max-width: 31%;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+    position: relative;
+    image-rendering: optimizeQuality;
+    z-index: 1;
+}
+
+#item11 img:hover {
+    transform: scale(1.4);
+    border: 2px solid black;
+    box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+}
+
 /*                           LEFT E RIGHT                         */
 
 .left {
@@ -440,7 +478,8 @@ video {
     #item4 img:hover,
     #item5 img:hover,
     #item7 img:hover,
-    #item10 img:hover {
+    #item10 img:hover,
+    #item11 img:hover {
         transform: none; 
         box-shadow: none; 
         pointer-events: none;
@@ -595,6 +634,23 @@ video {
         padding-right: 20px;
         opacity: 1;
         background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #item11 {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+        width: 75%;
+        height: 720px;
+    }
+
+    #item11 img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 20px 0;
+        margin-top: -5px;
     }
 
     .luigi {
