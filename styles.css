@@ -55,7 +55,7 @@ body {
     line-height: 0.2;
 }
 
-/*                           ITEM 2 -                         */
+/*                           ITEM 2 - INTRODUÇÃO E CAPA                        */
 
 #item2 {
     display: flex;
@@ -98,7 +98,7 @@ body {
     transform: scale(1.3);
 }
 
-/*                           ITEM 3                         */
+/*                           ITEM 3 - BARRA CONTATO                        */
 
 #item3 {
     display: flex;
@@ -120,7 +120,7 @@ body {
     border-bottom-right-radius: 15px;
 }
 
-/*                           ITEM 4                         */
+/*                           ITEM 4 - ANIMAÇÕES                        */
 
 #item4 {
     display: flex;
@@ -151,7 +151,7 @@ body {
     z-index: 1;
 }
 
-/*                           ITEM 5                         */
+/*                           ITEM 5 - CUTSCENES                        */
 
 #item5 {
     display: flex;
@@ -183,7 +183,7 @@ body {
     z-index: 1;
 }
 
-/*                           ITEM 6 - CENTRO TEXTO                        */
+/*                           ITEM 6 - CENTRO TEXTO GRANDE (NOMES ALBUNS)                       */
 
 #item6 {
     display: flex;
@@ -204,7 +204,7 @@ body {
     z-index: -1;
 }
 
-/*                           ITEM 7 - CENTRO IMAGEM                        */
+/*                           ITEM 7 - CENTRO IMAGEM BORDA RETA (CAPAS ALBUNS)                       */
 
 #item7 {
     display: flex;
@@ -325,7 +325,7 @@ body {
     border-bottom-right-radius: 0px; 
 }
 
-/*                           ITEM 10 - IMAGEM À ESQUERDA                        */
+/*                           ITEM 10 - IMAGEM À ESQUERDA (MODELOS 3D)                       */
 
 #item10 {
     display: flex;
