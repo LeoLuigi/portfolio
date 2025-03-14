@@ -37,11 +37,12 @@ body {
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
     width: 100%;
-    height: auto; 
-    background-color: white;
+    height: 220px; 
+    background: linear-gradient(0deg, rgba(0,207,0,1) 0%, rgba(0,111,0,1) 15%, rgba(0,54,0,1) 30%, rgba(0,0,0,1) 60%);
+    border-bottom: 2px solid white;
     padding: 50px;
     font-size: 50px;
-    color: black;
+    color: white;
     box-sizing: border-box;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px; 
@@ -127,10 +128,11 @@ body {
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
     width: 78%;
-    height: 175px;
+    height: 100px;
     background-color: rgba(209, 209, 209, 0.2);
     backdrop-filter: blur(4px);
     padding: 75px;
+    margin-top: -15px;
     color: white;
     text-align: left;
     border-radius: 15px;
@@ -141,6 +143,7 @@ body {
     height: auto;
     display: block;
     transition: transform 0.15s ease-out, box-shadow 0.15s ease-in;
+    margin-top: -20px;
 }
 
 #item4 img:hover {
@@ -163,6 +166,7 @@ body {
     color: white;
     text-align: left;
     border-radius: 15px;
+    margin-top: -15px;
 }
 
 #item5 img {
@@ -280,7 +284,7 @@ body {
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
     width: 77.3%;
-    height: 100px;
+    height: 75px;
     background-color: rgba(209, 209, 209, 0.2);
     backdrop-filter: blur(4px);
     padding-left: 25px;
@@ -336,6 +340,7 @@ body {
     text-align: left;
     border-radius: 15px;
     position: relative;
+    margin-top: -15px;
     z-index: 0;
 }
 
@@ -390,6 +395,7 @@ body {
     text-align: left;
     border-radius: 15px;
     position: relative;
+    margin-top: -15px;
     z-index: 0;
 }
 
@@ -412,21 +418,7 @@ body {
     z-index: 2;
 }
 
-/*                           LEFT E RIGHT                         */
-
-.left {
-    align-self: flex-start;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.right {
-    align-self: flex-end;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-/*                           LUIGI                         */
+/*                           LUIGI (A BARRINHA DE BAIXO)                        */
 
 .luigi {
     position: relative;
@@ -445,7 +437,7 @@ body {
     bottom: 12px; /* Ajuste a posição conforme necessário */
     width: 0;
     height: 2px; /* Ajuste a altura da linha conforme necessário */
-    background-color: red; /* Usa a cor do texto */
+    background-color: limegreen; /* Usa a cor do texto */
     transition: width 0.3s ease-in-out;
 }
 
@@ -669,10 +661,10 @@ video {
         left: 0;
         bottom: 0; /* Coloca a linha bem embaixo do texto */
         width: 100%; /* A linha sempre estará visível */
-        height: 2px;
-        background-color: red; /* A cor da linha */
+        height: 3px;
+        background-color: limegreen; /* A cor da linha */
         z-index: 0; /* A linha vai ficar atrás do texto */
-        margin-bottom: 9px;
+        margin-bottom: 6px;
     }
 
     video {
