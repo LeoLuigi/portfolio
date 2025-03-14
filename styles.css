@@ -200,6 +200,7 @@ body {
     border-radius: 15px;
     font-size: 30px;
     margin-bottom: -15px;
+    margin-top: -15px;
     z-index: -1;
 }
 
